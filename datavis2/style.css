@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Main title for the page, centered with some space below */
+h1.main-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* header with a light blue background for section titles */
+.header {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #b0e0e6;
+    padding: 10px 0;
+}
+
+/* Grid layout for placing text and visualizations side by side */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two columns: one for text, one for visuals */
+    grid-gap: 20px;  /* Space between grid items */
+    margin-bottom: 50px;
+}
+
+/* Container for text with padding and justified alignment */
+.text-container {
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Mini title styling for titles within sections */
+.mini-title {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Visualization container with some padding */
+.visualization {
+    padding: 5px;
+}

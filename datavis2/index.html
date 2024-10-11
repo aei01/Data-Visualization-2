@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global CO₂ and Temperature Visualizations</title>
+
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Importing libraries for creating visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+
+    <h1 class="main-title">The Causes and Impacts of Global Warming</h1>
+
+    <!-- First section: What is Global Warming -->
+    <div class="header">What is Global Warming?</div>
+
+    <div class="grid-container">
+        <div class="text-container">
+            <p>Global warming refers to the long-term increase in Earth's average surface temperature due to human activities, particularly the release of greenhouse gases such as carbon dioxide (CO₂), methane, and nitrous oxide. These gases trap heat in the atmosphere, preventing it from escaping into space, a phenomenon known as the greenhouse effect. The primary sources of greenhouse gas emissions are the burning of fossil fuels for energy, deforestation, and industrial processes. As global temperatures rise, this leads to significant environmental impacts, including melting polar ice, rising sea levels, more frequent and severe extreme weather events, and disruptions to ecosystems and biodiversity.</p>
+            <p>This chart shows global temperature anomalies from 1850 to the present, indicating how much the Earth's surface temperature has deviated from the historical average between 1961 and 1990. Negative values (in blue) represent cooler-than-average temperatures, while positive values (in red) represent warmer-than-average temperatures. The clear trend visible in the data is a significant warming of the planet, particularly since the 1970s. This sharp rise in global temperatures is closely linked to increased greenhouse gas emissions from human activities such as burning fossil fuels and deforestation. The data highlights the unprecedented rate of warming in recent decades, which poses a growing threat to ecosystems, weather patterns, and sea levels.</p>
+        </div>        
+        <div class="visualization">
+            <div class="mini-title">Global Temperature Anomalies (1850 - Present)</div>
+            <div id="vis3"></div> 
+        </div>
+    </div>
+
+    <!-- Second section: The Causes of Global Warming -->
+    <div class="header">The Causes of Global Warming</div>
+    <div class="mini-title">Greenhouse Gas Emissions by Sector (2020)</div>
+
+    <div class="grid-container">
+        <div class="text-container">
+            <p>Global warming is primarily driven by human activities that release large quantities of greenhouse gases (GHGs) into the atmosphere. The burning of fossil fuels such as coal, oil, and natural gas for energy and transportation is the largest contributor to GHG emissions, accounting for a significant portion of carbon dioxide (CO₂) and other heat-trapping gases. Industrial processes, deforestation, and agricultural activities further contribute to the rise in these gases. Deforestation reduces the Earth’s capacity to absorb CO₂, while agricultural practices release methane and nitrous oxide, both potent greenhouse gases.</p>
+            <p>The pie chart provides a breakdown of global greenhouse gas emissions by sector for the year 2020. As shown, the electricity and heat production sector is the largest emitter, contributing over 30% of total GHG emissions. Transportation follows closely behind, with significant contributions from industry, agriculture, and buildings. These sectors are responsible for the majority of human-induced global warming, as they collectively produce vast amounts of emissions that trap heat in the Earth’s atmosphere. By addressing emissions from these key sectors, particularly through renewable energy, more sustainable agriculture, and improved energy efficiency, the global community can work toward mitigating climate change.</p>
+        </div>
+        <div class="visualization">
+            <div id="vis5"></div> 
+        </div>
+    </div>
+
+    <div class="mini-title">Greenhouse Gas Emissions by Sector Throughout the Years</div>
+
+    <div class="grid-container">
+        <div class="visualization">
+            <div id="vis6"></div> 
+        </div>
+        <div class="text-container">
+            <p>This graph visualizes the breakdown of global greenhouse gas emissions by sector over time. The data shows that the electricity and heat production sector has historically been the largest emitter of greenhouse gases, followed by industries, agriculture, and transportation.</p>
+            <p>Efforts to mitigate global warming often focus on these sectors, as they produce significant emissions that trap heat in the atmosphere, leading to climate change. By reducing emissions from these key sectors, particularly through renewable energy, more sustainable agricultural practices, and energy-efficient technologies, the global community can address climate change more effectively.</p>
+        </div>
+    </div>
+
+    <!-- Third section: CO2 Emissions per Capita and Global Contribution -->
+    <div class="header">CO₂ Emissions per Capita and Global Contribution</div>
+    <div class="mini-title">CO₂ Emissions Distribution by Country (2022)</div>
+
+    <div class="grid-container">
+        <div class="text-container">
+            <p>This map further highlights the regional disparities in CO₂ emissions per capita, showing how industrialized nations tend to have significantly higher emissions. Countries with large populations and extensive fossil fuel use, such as the United States and parts of the Middle East, emit substantially more CO₂ per person. In contrast, many developing countries contribute far less per capita, reflecting lower energy consumption and industrial output. This data underscores the importance of focusing emission reduction efforts on high-emission regions, while ensuring that global climate policies take into account the differing capacities and responsibilities of nations in tackling climate change.</p>
+        </div>
+        <div class="visualization">
+            <div id="vis2"></div> 
+        </div>
+    </div>
+
+    <div class="mini-title">Global Warming Contribution by Country</div>
+
+    <div class="grid-container">
+        <div class="visualization">
+            <div id="vis4"></div> 
+        </div>
+        <div class="text-container">
+            <p>This chart highlights the top 10 countries contributing to global warming, measured by their cumulative greenhouse gas emissions from 1990 to 2020. The <strong>Percentage Contribution</strong> shows how each country's emissions compare to the global total, allowing for easy comparison of their impact on climate change.</p>
+            <p>The United States and China stand out as the top contributors, reflecting their large industrial sectors, energy consumption, and economic activity. Understanding the historical emissions from these major countries helps frame the global challenge of reducing emissions to mitigate the impacts of climate change. Efforts to reduce emissions, especially by these key contributors, will be crucial in meeting global climate targets.</p>
+        </div>
+    </div>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
